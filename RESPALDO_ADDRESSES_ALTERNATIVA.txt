@@ -1,0 +1,29 @@
+  /*ADDRESS*/
+      rem ***** Set/Get COLL_ADDRESS_TYPE_VW Collection Field Properties -- Parent: PS_ROOT Collection *****;
+      
+      &oCollAddressTypeVwCollection = &oCiPersonalData.COLL_ADDRESS_TYPE_VW;
+      &oCollAddressTypeVw = &oCollAddressTypeVwCollection.Item(1);
+      Local Rowset &rs_address;
+      Local integer &row_address;
+      
+      &rs_address = &rs_data.GetRow(1).GetRowset(5);
+      &rs_address.Sort(HEB_EMP_ADR_SAP.EFFDT, "A");
+      
+      
+      <*  Local integer &c2, &i195;
+      Local boolean &address_type_exists;
+      Local date &maxDate;*>
+      
+      For &row_address = 1 To &rs_address.RowCount
+         &HEB_EMP_ADR_SAP = &rs_data.GetRow(1).GetRowset(5).GetRow(&row_address).GetRecord(1);
+         &oCollAddressTypeVw = &oCollAddressTypeVwCollection.Item(1);
+         
+         &oCollAddressesCollection = &oCollAddressTypeVw.COLL_ADDRESSES;
+         &oCollAddresses = &oCollAddressesCollection.Item(1);
+         
+         &oCollAddresses.EFFDT = &HEB_EMP_ADR_SAP.EFFDT.Value;
+         
+         REM Break;
+         
+         
+      End-For;
