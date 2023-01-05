@@ -1,4 +1,4 @@
--- Ejemplo; 
+-- Example View; 
 
 SELECT STS.ROWSECCLASS 
  , STS.SETID 

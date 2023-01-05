@@ -1,0 +1,282 @@
+<soapenv:Envelope xmlns:heb="http://xmlns.oracle.com/Enterprise/Tools/schemas/HEB_ORG_SYNC_SAP_RQST.1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-12D0A37311743B934A16578295548186">
+            <wsse:Username>successfactors</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Heb12345</wsse:Password>
+            <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">e7vZoSfeAaDdcRS89E9soA==</wsse:Nonce>
+            <wsu:Created>2022-07-14T20:12:34.814Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <heb:HEB_ORG_SYNC_SAP_RQST>
+         <heb:MsgData>
+            <!--Zero or more repetitions:-->
+            <heb:Transaction>
+               <!--You may enter the following 2 items in any order-->
+               <!--Optional:-->
+               <heb:EstructuraOrganizacional class="R">
+                  <heb:GUID IsChanged="?">?</heb:GUID>
+                  <heb:SEQNBR IsChanged="?">?</heb:SEQNBR>
+                  <!--Optional:-->
+                  <heb:ACTION_DTTM IsChanged="?">?</heb:ACTION_DTTM>
+                  <!--Optional:-->
+                  <heb:ACTIONTYPE IsChanged="?">?</heb:ACTIONTYPE>
+                  <!--Optional:-->
+                  <heb:REASON IsChanged="?">?</heb:REASON>
+                  <!--Optional:-->
+                  <heb:EVENT_DT IsChanged="?">?</heb:EVENT_DT>
+                  <!--Optional:-->
+                  <heb:CREATIONDATE IsChanged="?">?</heb:CREATIONDATE>
+                  <heb:UnidadNegocio class="R">
+                     <heb:UnidadNegocio IsChanged="?">?</heb:UnidadNegocio>
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                  </heb:UnidadNegocio>
+                  <heb:Departamento class="R">
+                     <heb:Departamento IsChanged="?">?</heb:Departamento>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:CentroCostos IsChanged="?">?</heb:CentroCostos>
+                     <!--Optional:-->
+                     <heb:DepartamentoPadre IsChanged="?">?</heb:DepartamentoPadre>
+                  </heb:Departamento>
+                  <heb:CodigoPuesto class="R">
+                     <!--Optional:-->
+                     <heb:CdPuesto IsChanged="?">?</heb:CdPuesto>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:TituloPuesto IsChanged="?">?</heb:TituloPuesto>
+                     <!--Optional:-->
+                     <heb:CdFuncionPuesto IsChanged="?">?</heb:CdFuncionPuesto>
+                     <!--Optional:-->
+                     <heb:Plan IsChanged="?">?</heb:Plan>
+                     <!--Optional:-->
+                     <heb:Grado IsChanged="?">?</heb:Grado>
+                     <!--Optional:-->
+                     <heb:NivelDireccion IsChanged="?">?</heb:NivelDireccion>
+                     <!--Optional:-->
+                     <heb:HorasEstandar IsChanged="?">?</heb:HorasEstandar>
+                     <!--Optional:-->
+                     <heb:PeriodoTrabajoEstandar IsChanged="?">?</heb:PeriodoTrabajoEstandar>
+                     <!--Optional:-->
+                     <heb:FrecCompensacion IsChanged="?">?</heb:FrecCompensacion>
+                  </heb:CodigoPuesto>
+                  <heb:Posicion class="R">
+                     <!--Optional:-->
+                     <heb:NumPosicion IsChanged="?">?</heb:NumPosicion>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:Titulo IsChanged="?">?</heb:Titulo>
+                     <!--Optional:-->
+                     <heb:Motivo IsChanged="?">?</heb:Motivo>
+                     <!--Optional:-->
+                     <heb:UnidadNegocio IsChanged="?">?</heb:UnidadNegocio>
+                     <!--Optional:-->
+                     <heb:Departamento IsChanged="?">?</heb:Departamento>
+                     <!--Optional:-->
+                     <heb:CdPuesto IsChanged="?">?</heb:CdPuesto>
+                     <!--Optional:-->
+                     <heb:DependenciaDirecta IsChanged="?">?</heb:DependenciaDirecta>
+                     <!--Optional:-->
+                     <heb:Ubicacion IsChanged="?">?</heb:Ubicacion>
+                     <!--Optional:-->
+                     <heb:Empresa IsChanged="?">?</heb:Empresa>
+                     <!--Optional:-->
+                     <heb:HorasEstandar IsChanged="?">?</heb:HorasEstandar>
+                     <!--Optional:-->
+                     <heb:TurnoNormal IsChanged="?">?</heb:TurnoNormal>
+                     <!--Optional:-->
+                     <heb:FijoTemporal IsChanged="?">?</heb:FijoTemporal>
+                     <!--Optional:-->
+                     <heb:TiempoCompletoParcial IsChanged="?">?</heb:TiempoCompletoParcial>
+                     <!--Optional:-->
+                     <heb:PlanAdminSalarial IsChanged="?">?</heb:PlanAdminSalarial>
+                  </heb:Posicion>
+                  <heb:Empresa class="R">
+                     <!--Optional:-->
+                     <heb:Empresa IsChanged="?">?</heb:Empresa>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:Pais IsChanged="?">?</heb:Pais>
+                     <!--Optional:-->
+                     <heb:CalleNumero IsChanged="?">?</heb:CalleNumero>
+                     <!--Optional:-->
+                     <heb:CalleNumero2 IsChanged="?">?</heb:CalleNumero2>
+                     <!--Optional:-->
+                     <heb:Colonia IsChanged="?">?</heb:Colonia>
+                     <!--Optional:-->
+                     <heb:Municipio IsChanged="?">?</heb:Municipio>
+                     <!--Optional:-->
+                     <heb:Ciudad IsChanged="?">?</heb:Ciudad>
+                     <!--Optional:-->
+                     <heb:Estado IsChanged="?">?</heb:Estado>
+                     <!--Optional:-->
+                     <heb:CdPostal IsChanged="?">?</heb:CdPostal>
+                     <!--Optional:-->
+                     <heb:LineasNomina IsChanged="?">?</heb:LineasNomina>
+                     <!--Optional:-->
+                     <heb:NombreLegal IsChanged="?">?</heb:NombreLegal>
+                     <!--Optional:-->
+                     <heb:SubsidioAcreditableAplic IsChanged="?">?</heb:SubsidioAcreditableAplic>
+                     <!--Optional:-->
+                     <heb:SubsidioAcreitable IsChanged="?">?</heb:SubsidioAcreitable>
+                     <!--Optional:-->
+                     <heb:RFCEmpresa IsChanged="?">?</heb:RFCEmpresa>
+                     <!--Optional:-->
+                     <heb:IDInfonavit IsChanged="?">?</heb:IDInfonavit>
+                     <!--Optional:-->
+                     <heb:Actividad IsChanged="?">?</heb:Actividad>
+                     <!--Optional:-->
+                     <heb:CURP IsChanged="?">?</heb:CURP>
+                     <!--Optional:-->
+                     <heb:NombreRepLegal IsChanged="?">?</heb:NombreRepLegal>
+                     <!--Optional:-->
+                     <heb:RFC IsChanged="?">?</heb:RFC>
+                     <!--Optional:-->
+                     <heb:Telefono IsChanged="?">?</heb:Telefono>
+                     <heb:EmailEmpresa class="R">
+                        <!--Optional:-->
+                        <heb:EMAIL_ADDR IsChanged="?">?</heb:EMAIL_ADDR>
+                     </heb:EmailEmpresa>
+                  </heb:Empresa>
+                  <heb:Establecimiento class="R">
+                     <!--Optional:-->
+                     <heb:IDEstablecimiento IsChanged="?">?</heb:IDEstablecimiento>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:UnidadOficinaCentral IsChanged="?">?</heb:UnidadOficinaCentral>
+                     <!--Optional:-->
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:Pais IsChanged="?">?</heb:Pais>
+                     <!--Optional:-->
+                     <heb:CalleNumero IsChanged="?">?</heb:CalleNumero>
+                     <!--Optional:-->
+                     <heb:CalleNumero2 IsChanged="?">?</heb:CalleNumero2>
+                     <!--Optional:-->
+                     <heb:Colonia IsChanged="?">?</heb:Colonia>
+                     <!--Optional:-->
+                     <heb:Municipio IsChanged="?">?</heb:Municipio>
+                     <!--Optional:-->
+                     <heb:Ciudad IsChanged="?">?</heb:Ciudad>
+                     <!--Optional:-->
+                     <heb:Estado IsChanged="?">?</heb:Estado>
+                     <!--Optional:-->
+                     <heb:CdPostal IsChanged="?">?</heb:CdPostal>
+                     <!--Optional:-->
+                     <heb:Empresa IsChanged="?">?</heb:Empresa>
+                     <!--Optional:-->
+                     <heb:ZonaEconomica IsChanged="?">?</heb:ZonaEconomica>
+                     <!--Optional:-->
+                     <heb:FactorRiesgo IsChanged="?">?</heb:FactorRiesgo>
+                     <!--Optional:-->
+                     <heb:ZonaIMSS IsChanged="?">?</heb:ZonaIMSS>
+                     <!--Optional:-->
+                     <heb:SubzonaIMSS IsChanged="?">?</heb:SubzonaIMSS>
+                     <!--Optional:-->
+                     <heb:SectorIMSS IsChanged="?">?</heb:SectorIMSS>
+                     <!--Optional:-->
+                     <heb:NumeroGuia IsChanged="?">?</heb:NumeroGuia>
+                  </heb:Establecimiento>
+                  <heb:PlanSalarial class="R">
+                     <!--Optional:-->
+                     <heb:PlanAdminSalarial IsChanged="?">?</heb:PlanAdminSalarial>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:HorasEstandar IsChanged="?">?</heb:HorasEstandar>
+                     <!--Optional:-->
+                     <heb:PeriodoTrabajo IsChanged="?">?</heb:PeriodoTrabajo>
+                     <!--Optional:-->
+                     <heb:FrecuenciaDefMes IsChanged="?">?</heb:FrecuenciaDefMes>
+                     <!--Optional:-->
+                     <heb:FrecuenciaDefDia IsChanged="?">?</heb:FrecuenciaDefDia>
+                     <!--Optional:-->
+                     <heb:FrecuenciaDefHora IsChanged="?">?</heb:FrecuenciaDefHora>
+                  </heb:PlanSalarial>
+                  <heb:GradoSalarial class="R">
+                     <!--Optional:-->
+                     <heb:PlanAdminSalarial IsChanged="?">?</heb:PlanAdminSalarial>
+                     <!--Optional:-->
+                     <heb:Grado IsChanged="?">?</heb:Grado>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:Moneda IsChanged="?">?</heb:Moneda>
+                     <!--Optional:-->
+                     <heb:MinimoMensual IsChanged="?">?</heb:MinimoMensual>
+                     <!--Optional:-->
+                     <heb:MedioMensual IsChanged="?">?</heb:MedioMensual>
+                     <!--Optional:-->
+                     <heb:Maximo IsChanged="?">?</heb:Maximo>
+                     <!--Optional:-->
+                     <heb:RegionReguladora IsChanged="?">?</heb:RegionReguladora>
+                  </heb:GradoSalarial>
+                  <heb:Ubicacion class="R">
+                     <!--Optional:-->
+                     <heb:CdUbicacion IsChanged="?">?</heb:CdUbicacion>
+                     <!--Optional:-->
+                     <heb:FechaEfectiva IsChanged="?">?</heb:FechaEfectiva>
+                     <!--Optional:-->
+                     <heb:Status IsChanged="?">?</heb:Status>
+                     <!--Optional:-->
+                     <heb:Descripcion IsChanged="?">?</heb:Descripcion>
+                     <!--Optional:-->
+                     <heb:Pais IsChanged="?">?</heb:Pais>
+                     <!--Optional:-->
+                     <heb:CalleNumero IsChanged="?">?</heb:CalleNumero>
+                     <!--Optional:-->
+                     <heb:CalleNumero2 IsChanged="?">?</heb:CalleNumero2>
+                     <!--Optional:-->
+                     <heb:Colonia IsChanged="?">?</heb:Colonia>
+                     <!--Optional:-->
+                     <heb:Municipio IsChanged="?">?</heb:Municipio>
+                     <!--Optional:-->
+                     <heb:Ciudad IsChanged="?">?</heb:Ciudad>
+                     <!--Optional:-->
+                     <heb:Estado IsChanged="?">?</heb:Estado>
+                     <!--Optional:-->
+                     <heb:CdPostal IsChanged="?">?</heb:CdPostal>
+                     <!--Optional:-->
+                     <heb:ImpuestoLocal IsChanged="?">?</heb:ImpuestoLocal>
+                     <!--Optional:-->
+                     <heb:ImpuestoLocalEspecial IsChanged="?">?</heb:ImpuestoLocalEspecial>
+                     <!--Optional:-->
+                     <heb:Establecimiento IsChanged="?">?</heb:Establecimiento>
+                  </heb:Ubicacion>
+               </heb:EstructuraOrganizacional>
+            </heb:Transaction>
+         </heb:MsgData>
+      </heb:HEB_ORG_SYNC_SAP_RQST>
+   </soapenv:Body>
+</soapenv:Envelope>
