@@ -1,4 +1,4 @@
--- Example View; 
+-- Example View notsql; 
 
 SELECT STS.ROWSECCLASS 
  , STS.SETID 
