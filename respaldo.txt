@@ -1,4 +1,4 @@
-select * from ps_XG_PUE_SIN_VW; 
+-- Ejemplo; 
 
 SELECT STS.ROWSECCLASS 
  , STS.SETID 
